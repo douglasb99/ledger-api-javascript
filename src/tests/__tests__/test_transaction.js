@@ -99,7 +99,6 @@ describe(':Test Transaction', () => {
     })
 
     // signers() tested below
-
     test('Test add_transfer', () => {
         let txObj = new Transaction()
         let address = dummy_address()
