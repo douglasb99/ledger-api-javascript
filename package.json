@@ -1,8 +1,8 @@
 {
-  "name": "ledger-api-javascript",
+  "name": "fetchai",
   "version": "1.0.0",
   "description": "Fetch.AI Ledger Javascript API",
-  "main": "dist/index.js",
+  "main": "./dist/fetchai/ledger/index.js",
   "scripts": {
     "build": "babel src/ -d dist/",
     "test": "jest src/test",
@@ -12,11 +12,12 @@
     "end-to-end": "npm run build && node src/tests/end-to-end-tests/test_transfer.js"
   },
   "jest": {
+"testEnvironment": "node",
     "setupFiles": [
       "./src/tests/utils/helpers.js"
     ],
     "coverageReporters": [
-      "json-summary"
+      "json-       const identity = new Entity()summary"
     ],
     "coverageThreshold": {
       "global": {
@@ -27,8 +28,8 @@
       }
     }
   },
-  "author": "",
-  "license": "ISC",
+  "author": "fetch",
+  "license": "MIT",
   "dependencies": {
     "@msgpack/msgpack": "^1.9.3",
     "atob": "^2.1.2",
@@ -73,5 +74,17 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasb99/ledger-api-javascript.git"
+  },
+  "keywords": [
+    "blockchain",
+    "fetchai"
+  ],
+  "bugs": {
+    "url": "https://github.com/douglasb99/ledger-api-javascript/issues"
+  },
+  "homepage": "https://github.com/douglasb99/ledger-api-javascript#readme"
 }

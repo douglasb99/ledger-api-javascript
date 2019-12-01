@@ -94,17 +94,6 @@ export class ApiEndpoint {
             return [true, resp.data]
         }
 
-        // in python add later perhaps
-
-        // # Allow for additional data to be transferred
-        // response = None
-        // try:
-        //     response = json.loads(raw_response.text)
-        // except:
-        //     pass
-        //
-        // return False, response
-
         return [false, resp.data]
     }
 

@@ -11,6 +11,7 @@ describe(':ContractsApi', () => {
     })
 
     test('test get ledger address', async () => {
+        debugger;
         // this is the only way i can get the throws of async promsises to be tested properly, and was from SO Q/A but linter rejects, so commented
         // expect(Bootstrap.get_ledger_address('def')).resolves.toThrow(NetworkUnavailableError)
         //  expect(Bootstrap.get_ledger_address('def2')).resolves.toThrow(RunTimeError)

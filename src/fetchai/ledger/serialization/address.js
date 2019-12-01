@@ -2,7 +2,7 @@ import {Address} from '../../../fetchai/ledger/crypto/address'
 
 const BYTE_LENGTH = 32
 
-const encode = (buffer, address) => {
+const encode_address = (buffer, address) => {
     if (address instanceof Address) {
         return Buffer.concat([buffer, Buffer.from(address.toHex(), 'hex')])
     } else {
@@ -17,4 +17,4 @@ const decode = (buffer) => {
     return [new Address(address_raw), buffer]
 }
 
-export {encode, decode}
+export {encode_address, decode}
